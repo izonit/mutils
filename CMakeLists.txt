@@ -1,22 +1,3 @@
-# cmake_minimum_required(VERSION 3.10)
-# project(mutils VERSION 0.1.0 LANGUAGES C CXX)
-
-# set(SRC_DIR "src")
-# set(INCLUDE_DIR "src/include")
-# set(BUILD_DIR "build")
-# set(CMAKE_INSTALL_PREFIX "/usr")
-
-# include_directories(${INCLUDE_DIR})
-
-# add_library(mutils STATIC
-#   ${SRC_DIR}/mutils-fhandler.cpp
-#   ${SRC_DIR}/mutils-logger.cpp
-# )
-
-# install(TARGETS mutils
-#   DESTINATION $(CMAKE_INSTALL_INCLUDE_DIR)/mutils
-# )
-
 cmake_minimum_required(VERSION 3.10)
 project(mutils VERSION 0.1.0 LANGUAGES C CXX)
 
