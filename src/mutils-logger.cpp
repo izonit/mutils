@@ -10,22 +10,6 @@ mu::Logger::Logger(LogLevel _level, const std::optional<std::string>& _destinati
   }
 }
 
-// std::string log_level_to_string(mu::LogLevel _level)
-// {
-//   switch (_level) {
-//   case mu::LogLevel::DEBUG:
-//     return "DEBUG";
-//   case mu::LogLevel::INFO:
-//     return "INFO";
-//   case mu::LogLevel::WARN:
-//     return "WARN";
-//   case mu::LogLevel::ERROR:
-//     return "ERROR";
-//   default:
-//     return "UNKNOWN";
-//   }
-// }
-
 bool mu::Logger::should_log(mu::LogLevel _level)
 {
   return static_cast<int>(_level) >= static_cast<int>(this->level);
