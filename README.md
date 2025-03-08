@@ -48,9 +48,7 @@ Mutils (pronounced as `muˈti:ls`) is a short-hand alias for **M**izo**Utils**. 
 I use the empty comments to prevent clang-format from formatting certain things as a one-liner, which sometimes is unwanted and infuriating.
 
 ## TODO
-- `!!!` Improve the documentation overall (and, preferrably, add docs to the source files as well)
-- Add a logger - with a number of log levels to select from (with safety, efficiency and use in mind)
-- Integrate GTest to catch bugs automatically
+Refer to [misc/todo.md](https://github.com/izonit/mutils/blob/main/misc/todo.md)
 
 ## Known bugs
 - None yet.
