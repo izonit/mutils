@@ -1,4 +1,4 @@
-# Mutils
+# [Mutils](https://github.com/izonit/mutils)
 **An amateur project, created to simplify routine.** Created by [mizorint](https://x.com/mizorint).
 
 ## Installation and usage
