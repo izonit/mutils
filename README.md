@@ -50,5 +50,8 @@ I use the empty comments to prevent clang-format from formatting certain things 
 ## TODO
 Refer to [misc/todo.md](https://github.com/izonit/mutils/blob/main/misc/todo.md)
 
+## Changelog
+Refer to [misc/todo.md](https://github.com/izonit/mutils/blob/main/misc/changelog.md)
+
 ## Known bugs
 - None yet.
