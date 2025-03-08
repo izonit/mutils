@@ -20,5 +20,5 @@ install(TARGETS mutils
 )
 
 install(DIRECTORY src/include/
-    DESTINATION /usr/local/include
+    DESTINATION /usr/local/include/Mutils
 )
