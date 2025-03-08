@@ -4,7 +4,7 @@
 //
 //===------------------------------------------------===//
 
-#include <mutils-logger.h> // Include the installed library
+#include <Mutils/mutils-logger.h> // Include the installed library
 
 int main()
 {
