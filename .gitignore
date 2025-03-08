@@ -1,0 +1,8 @@
+# build/ directory - build artefacts
+build/*
+
+# local/ directory - notes, artefacts, or something that I would like to keep as a reminder
+local/*
+
+# .cache/ directory - clangd cache
+.cache/*

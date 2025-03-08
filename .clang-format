@@ -1,0 +1,39 @@
+# Custom clang-format rule set. Personal tweaks used to keep the codebase clean and consistent.
+
+BasedOnStyle: LLVM
+Language: Cpp
+
+ColumnLimit: 105
+
+AccessModifierOffset: -2
+IndentWidth: 2
+UseTab: Never
+
+LambdaBodyIndentation: Signature
+AlignConsecutiveAssignments: true
+AlignTrailingComments: true
+AllowShortIfStatementsOnASingleLine: false
+BreakConstructorInitializers: AfterColon
+PackConstructorInitializers: CurrentLine
+IndentCaseLabels: false
+NamespaceIndentation: All
+AlignEscapedNewlines: Left
+AllowShortFunctionsOnASingleLine: Empty
+AllowShortLambdasOnASingleLine: Empty
+AlwaysBreakTemplateDeclarations: false
+IndentPPDirectives: AfterHash
+PointerAlignment: Left
+SortIncludes: true
+SpaceAfterCStyleCast: false
+SpaceAfterTemplateKeyword: false
+
+BreakBeforeBraces: Custom
+BraceWrapping:
+  AfterFunction: true
+  AfterClass: false
+  AfterControlStatement: false
+  AfterEnum: false
+  AfterStruct: false
+  AfterNamespace: false
+  BeforeElse: false
+  BeforeLambdaBody: false
