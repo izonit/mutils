@@ -7,6 +7,11 @@ To install the library, clone the repository, and `cd` into  it:
 git clone https://github.com/izonit/mutils && cd mutils/
 ```
 
+Build the library:
+```sh
+cmake --build build/
+```
+
 After that, install the library globally:
 ```sh
 sudo cmake --install build/
