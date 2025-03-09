@@ -1,14 +1,3 @@
-//===------------------------------------------------===//
-//
-// Logging utility with different log levels.
-//
-// Consists of a class with logging methods
-//
-// Originally created: 07.03.2025 (DD.MM.YYYY)
-// Author: mizorint (a.k.a. izonit)
-//
-//===------------------------------------------------===//
-
 #pragma once
 
 #include <optional>
@@ -28,7 +17,7 @@ namespace mu {
     // Current log level (you provide it in the constructor)
     mu::LogLevel level;
 
-    // Where to log the output(stdout by default)
+    // Where to log the output (stdout by default)
     std::optional<std::string> destination;
 
     // Convert the LogLevel enum's content into a string
@@ -54,7 +43,7 @@ namespace mu {
 
   public:
     // Constructor of the logger (select the log level and the destination)
-    Logger(mu::LogLevel _level, const std::optional<std::string>& _destination);
+    Logger(mu::LogLevel _level, const std::optional<std::string>& _destination = std::nullopt);
 
     // Default destructor
     ~Logger() = default;
