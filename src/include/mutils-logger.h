@@ -1,3 +1,15 @@
+//===------------------------------------------------===//
+//
+// Simple logger utility.
+//
+// Consists of a class. You can choose different
+// log levels (out of existing four)
+//
+// Originally created: 07.03.2025 (DD.MM.YYYY)
+// Author: mizorint (a.k.a. izonit)
+//
+//===------------------------------------------------===//
+
 #pragma once
 
 #include <optional>
