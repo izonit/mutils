@@ -1,3 +1,12 @@
+//===------------------------------------------------===//
+//
+// Implementation of mutils-logger.h
+//
+// Please refer to the header for documentation and
+// information.
+//
+//===------------------------------------------------===//
+
 #include "include/mutils-logger.h"
 #include "include/mutils-fhandler.h"
 #include <iostream>
