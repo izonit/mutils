@@ -8,6 +8,7 @@
 //===------------------------------------------------===//
 
 #include "include/mutils-fhandler.h"
+#include "include/mutils-logger.h"
 #include <iostream>
 
 mu::FileHandler::FileHandler(const std::string& _filename) : filename(_filename)
@@ -19,10 +20,11 @@ mu::FileHandler::FileHandler(const std::string& _filename) : filename(_filename)
 mu::FileHandler::~FileHandler()
 {
   if (this->file.is_open()) {
+    mu::Logger(LogLevel::INFO).log("Succesfully closed file stream", LogLevel::INFO);
     this->file.close();
-    std::cout << "[INFO]: Succesfully closed file stream\n";
   } else {
-    std::cout << "[ERROR]: Unable to close an unreachable file stream\n";
+    mu::Logger(LogLevel::ERROR)
+        .log("[ERROR]: Unable to close an unreachable file stream", LogLevel::ERROR);
   }
 }
 
@@ -32,7 +34,7 @@ bool mu::FileHandler::write(const std::string& _content)
     this->file << _content << "\n";
     return true;
   } else {
-    std::cout << "[ERROR]: Unable to write to an unreachable file\n";
+    mu::Logger(LogLevel::ERROR).log("[ERROR] : Unable to write to an unreachable file", LogLevel::ERROR);
     return false;
   }
 }
@@ -48,7 +50,7 @@ std::string mu::FileHandler::read()
       contents += line + "\n";
     }
   } else {
-    std::cout << "[ERROR]: Unable to read from an unreachable file\n";
+    mu::Logger(LogLevel::ERROR).log("[ERROR]: Unable to read from an unreachable file", LogLevel::ERROR);
   }
 
   return contents;
