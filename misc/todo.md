@@ -4,6 +4,6 @@
 ### URGENT:
 - `!!!` Add Windows support and test it
 
-## TRIVIAL:
+### TRIVIAL:
 - Switch to mutils-logger in the File Handler. Use mutils-logger for logging. Might require refactoring.
 - Integrate GTest to catch bugs automatically.
