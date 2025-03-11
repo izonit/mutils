@@ -44,6 +44,7 @@ std::string mu::FileHandler::read()
   std::string contents;
 
   if (this->file.is_open()) {
+    this->file.clear();
     this->file.seekg(0, std::ios::beg);
     std::string line;
     while (std::getline(this->file, line)) {
