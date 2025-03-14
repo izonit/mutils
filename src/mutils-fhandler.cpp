@@ -23,8 +23,7 @@ mu::FileHandler::~FileHandler()
     mu::Logger(LogLevel::INFO).log("Succesfully closed file stream", LogLevel::INFO);
     this->file.close();
   } else {
-    mu::Logger(LogLevel::ERROR)
-        .log("[ERROR]: Unable to close an unreachable file stream", LogLevel::ERROR);
+    mu::Logger(LogLevel::ERROR).log("Unable to close an unreachable file stream", LogLevel::ERROR);
   }
 }
 
@@ -34,7 +33,7 @@ bool mu::FileHandler::write(const std::string& _content)
     this->file << _content << "\n";
     return true;
   } else {
-    mu::Logger(LogLevel::ERROR).log("[ERROR] : Unable to write to an unreachable file", LogLevel::ERROR);
+    mu::Logger(LogLevel::ERROR).log("Unable to write to an unreachable file", LogLevel::ERROR);
     return false;
   }
 }
@@ -51,7 +50,7 @@ std::string mu::FileHandler::read()
       contents += line + "\n";
     }
   } else {
-    mu::Logger(LogLevel::ERROR).log("[ERROR]: Unable to read from an unreachable file", LogLevel::ERROR);
+    mu::Logger(LogLevel::ERROR).log("nable to read from an unreachable file", LogLevel::ERROR);
   }
 
   return contents;
